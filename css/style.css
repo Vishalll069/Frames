@@ -1,0 +1,274 @@
+@import "utilities.css";
+
+/* #3DCFD3;    primary
+   #161616;    dark
+   #FFFFFF;    pure
+   #898989;    ternary
+   #F2F2F2;    Light 
+   #070606;    secondary
+*/
+
+body {
+  /* height: 2500px; */
+  font-family: "Poppins", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smotthing: antialiased;
+}
+
+header {
+  background-color: #161616;
+  height: 800px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+
+.container {
+  max-width: 1152px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header nav .left a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+header nav .left a:hover {
+  color: #3dcfd3;
+}
+
+header nav {
+  padding: 2rem 0;
+}
+
+header nav .logo {
+  margin-right: 3rem;
+}
+
+.hero .left img {
+  width: 400px;
+}
+
+.hero {
+  padding: 3rem 0;
+}
+
+.hero .right {
+  color: #ffffff;
+}
+
+.hero .right h6 {
+  color: #3dcfd3;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero .right h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  font-weight: 100;
+}
+
+.hero .right h1 span {
+  color: #3dcfd3;
+}
+
+.hero .right p {
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+.hero .right {
+  margin-top: 0px;
+}
+
+/* main */
+
+  /* About me */
+section {
+  padding: 7rem 0;
+}
+
+section.about .about-img {
+  height: 450px;
+}
+
+section.about h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+section.about h1 span {
+  color: #3dcfd3;
+}
+
+section.about h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+
+}
+
+section.about p{
+  font-family: 'Lato' sans-serif;
+  color:#898989; 
+  line-height: 1.9;
+  margin-bottom: 2rem;
+}
+
+section.about .social{
+  display: flex;
+
+}
+
+section.about .social a{
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  transition: all .3s ease;
+}
+
+section.about .social a:hover{
+  background-color: #3dcfd3;
+}
+
+section.about .social a img{
+  width: 50px;
+  height: 50px;
+  padding: 0.5rem;
+  gap: 2px;
+}
+
+  /* Contact */
+
+.section-heading{
+  color: #070606;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+.section-heading span{
+  color: #3dcfd3;
+}
+
+.section-heading + p{
+  color: #898989;
+  font-family: 'Lato' sans-serif;
+  margin-bottom: 2rem;
+  text-align: center;
+
+}
+
+section.contact .card-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+
+}
+
+section.contact .card-wrapper .card{
+  text-align: center;
+  justify-content: center;
+}
+
+section.contact .card-wrapper .card img{
+  margin-bottom: 2rem;
+  width: 80px;
+  height: 80px;
+}
+
+section.contact .card-wrapper .card h1{
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+section.contact .card-wrapper .card h6{
+  font-size: 1rem;
+  color: #898989;
+  font-weight: 400;
+  margin-bottom: 4rem;
+}
+
+section.contact .input-wrap{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+section.contact .input-wrap-2{
+  display: flex;
+  flex-direction: column;
+}
+
+section.contact .input-wrap-2 input{
+  margin-bottom: 2rem;
+  /* border: 1px solid #f2f2f2; */
+  /* font-size: 0.9rem; */
+}
+
+section.contact input{
+  padding: 0.5rem;
+  border: 1px solid #f2f2f2;
+  font-size: 0.9rem;
+}
+section.contact .input-wrap-2 textarea{
+  padding: 0.5rem;
+  border: 1px solid #f2f2f2;
+  font-size: 0.9rem;
+}
+
+section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
+  outline: none;
+}
+
+section.contact .btn-wrapper{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Footer */
+
+footer{
+  background: #161616;
+  text-align: center;
+  padding: 5rem 0;
+
+}
+
+footer .footer-logo{
+  margin-bottom: 3rem;
+  width: 150px;
+}
+
+footer .footer-socials a{
+  margin-right: 1rem;
+  filter:  brightness(0) invert(1);
+}
+
+footer .footer-socials{
+  margin-bottom: 3rem;
+  margin-right: -1rem;
+  /* filter:  brightness(1) invert(0); */
+}
+
+footer .copywrite{
+  color: #898989;
+}
